@@ -1,1 +1,219 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Control Theory - In-Class Demos & Activities</title>
 
+    <style>
+        :root {
+            --primary: #003b6f;
+            --secondary: #0077b6;
+            --accent: #90e0ef;
+            --background: #f8fafc;
+            --card: #ffffff;
+            --text: #222;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 1rem auto 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: .3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1.2rem;
+            box-shadow: 0 3px 8px rgba(0,0,0,.08);
+            transition: transform .2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--secondary);
+        }
+
+        a.demo {
+            display: inline-block;
+            margin-top: .8rem;
+            text-decoration: none;
+            background: var(--secondary);
+            color: white;
+            padding: .5rem .9rem;
+            border-radius: 5px;
+        }
+
+        a.demo:hover {
+            background: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            padding: 2rem;
+            font-size: .9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Modern Control Theory</h1>
+    <p>
+        Interactive demonstrations, classroom activities, and visualizations
+        for modern control systems. These materials accompany lectures on
+        state-space methods, controllability, observability, estimation,
+        optimal control, and feedback design.
+    </p>
+</header>
+
+<main>
+
+<section>
+    <h2>Interactive Demonstrations</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>State-Space Visualization</h3>
+            <p>
+                Explore state trajectories and phase portraits for linear
+                dynamical systems.
+            </p>
+            <a class="demo" href="state-space/">Launch Demo</a>
+        </div>
+
+        <div class="card">
+            <h3>Controllability</h3>
+            <p>
+                Build intuition for controllable and uncontrollable systems
+                using the controllability matrix.
+            </p>
+            <a class="demo" href="controllability/">Launch Demo</a>
+        </div>
+
+        <div class="card">
+            <h3>Observability</h3>
+            <p>
+                Investigate what system states can be reconstructed from
+                output measurements.
+            </p>
+            <a class="demo" href="observability/">Launch Demo</a>
+        </div>
+
+        <div class="card">
+            <h3>Pole Placement</h3>
+            <p>
+                Design state feedback gains and observe how closed-loop poles
+                influence system dynamics.
+            </p>
+            <a class="demo" href="pole-placement/">Launch Demo</a>
+        </div>
+
+        <div class="card">
+            <h3>LQR Design</h3>
+            <p>
+                Adjust weighting matrices and explore optimal feedback control
+                using the Linear Quadratic Regulator.
+            </p>
+            <a class="demo" href="lqr/">Launch Demo</a>
+        </div>
+
+        <div class="card">
+            <h3>Kalman Filter</h3>
+            <p>
+                Visualize state estimation under noisy measurements and process
+                uncertainty.
+            </p>
+            <a class="demo" href="kalman-filter/">Launch Demo</a>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>In-Class Activities</h2>
+
+    <ul>
+        <li>✓ Eigenvalue and stability exploration</li>
+        <li>✓ State feedback design challenges</li>
+        <li>✓ Observer design exercises</li>
+        <li>✓ LQR parameter tuning activity</li>
+        <li>✓ Kalman filter intuition exercises</li>
+        <li>✓ Aircraft dynamics case study</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Resources</h2>
+
+    <ul>
+        <li><a href="https://python-control.readthedocs.io/">Python Control Systems Library</a></li>
+        <li><a href="https://docs.scipy.org/">SciPy Documentation</a></li>
+        <li><a href="https://numpy.org/">NumPy</a></li>
+    </ul>
+
+</section>
+
+</main>
+
+<footer>
+    © 2026 • Modern Control Theory • In-Class Demonstrations & Activities
+</footer>
+
+</body>
+</html>
+```
